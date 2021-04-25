@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my page</title>
     <meta name="viewport" content="width=1000px, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 </head>
 <style>
     *
@@ -104,21 +103,6 @@
   <modules runAllManagedModulesForAllRequests="true" />
   <directoryBrowse enabled="true" />
 </system.webServer>
-<script>
-     !function(n) {
-      var e = n.document,
-      t = e.documentElement,
-      i = 640,
-      d = i / 100,
-      o = "orientationchange" in n ? "orientationchange": "resize",
-      a = function() {
-      var n = t.clientWidth || 320;
-      n > 640 && (n = 640),
-      t.style.fontSize = n / d + "px"
-      };
-      e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
-     } (window);
-</script>
 <body>
     <div class="container">
         <div class="box">
