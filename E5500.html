@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my page</title>
     <meta name="viewport" content="width=1000px, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 </head>
 <style>
     *
@@ -13,7 +14,7 @@
         padding:0;
         font-family:'Poppins',sans-serif;
         background-color: #E8E8E8;
-        1:00 2021/3/9
+        
     }
     .container
     {
@@ -25,37 +26,37 @@
     .box
     {
         position:relative;
-        height:900px;
-        top:-450px;
-        width:1400px;
-        margin:0px auto; 
+        height:9rem;
+        top:-4.5rem;
+        width:14rem;
+        margin:0rem auto; 
         background-image: url(R..jpg);
-        background-position: -55px 50px;
+        background-position: -0.55rem 0.5rem;
         background-repeat:no-repeat;
-        background-size: 300px 300px;
+        background-size: 3rem 3rem;
         background-color: white;
         border-radius:15px;
     }
     .list
     {
         float:left;
-        width:280px;
-        height:850px;
+        width:2.8rem;
+        height:8.5rem;
         background-color: transparent;
-        margin-left:100px;
-        margin-top: 25px;
+        margin-left:1rem;
+        margin-top: 0.25rem;
         overflow:auto;
     }
     .content
     {
         float:right;
-        width:900px;
-        height:850px;
-        padding-left:10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        margin-right: 100px;
-        margin-top: 20px;
+        width:9rem;
+        height:8.5remx;
+        padding-left:0.1rem;
+        padding-right: 0.1rem;
+        padding-bottom: 0.1rem;
+        margin-right: 1rem;
+        margin-top: 0.2rem;
         overflow-y: scroll;
         background-color: whitesmoke;
     }
@@ -66,19 +67,19 @@
     }
     p
     {
-        margin:30px;
+        margin:0.3rem;
         background-color: #E8E9E3;
-        padding: 8px;
-        word-spacing: 5px;
-        min-height: 30px;
+        padding: 0.08rem;
+        word-spacing: 0.05rem;
+        min-height: 0.3rem;
         height:auto;
     }
     HR 
     {
         size:1;
-        width:823px;
+        width:8.23rem;
         color:aliceblue;
-        margin:30px;
+        margin:0.3rem;
     }
     a:link
     {
@@ -103,6 +104,21 @@
   <modules runAllManagedModulesForAllRequests="true" />
   <directoryBrowse enabled="true" />
 </system.webServer>
+<script>
+     !function(n) {
+      var e = n.document,
+      t = e.documentElement,
+      i = 640,
+      d = i / 100,
+      o = "orientationchange" in n ? "orientationchange": "resize",
+      a = function() {
+      var n = t.clientWidth || 320;
+      n > 640 && (n = 640),
+      t.style.fontSize = n / d + "px"
+      };
+      e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+     } (window);
+</script>
 <body>
     <div class="container">
         <div class="box">
